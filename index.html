@@ -142,6 +142,59 @@
           transform: translateY(60px);
           transition: 0.5s;
         }
+       .single-team2{
+          width: 360px;
+          height: 400px;
+          padding: 24px;
+          background: #fff;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          transition: .6s ease-out;
+          box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+          margin-right: 10px;
+          margin-left: 10px;
+          border:solid black 2px;
+        }
+        .single-team2:hover{
+          transform: translateY(15px);
+        }
+        .single-team2:hover:before{
+          opacity: 1;
+        }
+        .single-team2:hover .team-text{
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .single-team2:before{
+          content: ' ';
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to top, #cc9b6d, transparent);
+          z-index: 2;
+          transition: 0.5s;
+          opacity: 0;
+        }
+        .single-team2 img{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+        }
+        .single-team2 .team-text{
+          position: relative;
+          z-index: 3;
+          color: #fff;
+          opacity: 0;
+          transform: translateY(60px);
+          transition: 0.5s;
+        }
         .team-text h2{
           margin: 0;
         }
@@ -252,7 +305,7 @@
                             <!--Changes from here--><br><br><br>
 
                         <div class="team-area">
-                            <div class="single-team">
+                            <div class="single-team2">
                               <img src="img-2.jpg" alt="">
                               <div class="team-text">
                                 <h2>Person 1</h2>
@@ -265,7 +318,7 @@
                                 </p>
                               </div>
                             </div>
-                            <div class="single-team">
+                            <div class="single-team2">
                               <img src="img-1.jpg" alt="">
                               <div class="team-text">
                                 <h2>Person 2</h2>
@@ -278,7 +331,7 @@
                                 </p>
                               </div>
                             </div>
-                            <div class="single-team">
+                            <div class="single-team2">
                               <img src="img-3.jpg" alt="">
                               <div class="team-text">
                                 <h2>Person 3</h2>
