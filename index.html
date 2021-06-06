@@ -87,6 +87,7 @@
             width: 7%;
             border-color:#fb9300;
         }
+        
 
         .team-area{
           display: flex;
@@ -94,19 +95,7 @@
           justify-content: space-around;
         }
 
-        .single-team{
-          width: 360px;
-          height: 400px;
-          padding: 24px;
-          background: #fff;
-          position: relative;
-          display: flex;
-          align-items: flex-end;
-          transition: .6s ease-out;
-/*           box-shadow: 0 10px 10px rgba(0,0,0,0.5); */
-          margin-right: 10px;
-          margin-left: 10px;
-        }
+        
         .single-team:hover{
           transform: translateY(15px);
         }
@@ -146,28 +135,129 @@
           transform: translateY(60px);
           transition: 0.5s;
         }
-        .team-text h2{
-          margin: 0;
-        }
-        .team-text a{
+        
+        
+        
+        
+
+        @media (min-width: 1024px) {    /* Media Querries for large screen */
+          .team-text{
+            font-size: 25px;
+          }
+          .text{
+            font-size: 35px;
+          }
+
+          .single-team{
+          width: 300px;
+          height: 350px;
+          padding: 24px;
+          background: #fff;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          transition: .6s ease-out;
+          margin-right: 10px;
+          margin-left: 10px;
+          }
+          .large1{
+            font-size: 24px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:white;
+          }
+          .large2{
+            font-size: 24px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:#fb9300;
+          }
+          .team-text a i{
+          color: #fff;
+          padding: 6px 8px;
+          }
+          .team-text a{
           width: 30px;
           height: 30px;
           display: inline-block;
-          border: 1px solid #fff;
-          border-radius: 50%;
+          
           margin: 0 5px;
           text-decoration: none;
         }
-        .team-text a i{
+
+        }
+
+        @media (max-width: 1024px) {
+          .team-text{
+            font-size: 20px;
+          }
+          .text{
+            font-size: 30px;
+          }
+
+          .single-team{
+          width: 250px;
+          height: 300px;
+          padding: 24px;
+          background: #fff;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          transition: .6s ease-out;
+          margin-right: 10px;
+          margin-left: 10px;
+          }
+          .team-text a i{
           color: #fff;
           padding: 6px 8px;
+          }
+          .team-text a{
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          
+          margin: 0 5px;
+          text-decoration: none;
         }
-        @media screen and (max-width: 800px) {
-  .top, .single-team img {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    height: auto;
-  }
-}
+        }
+
+        
+        @media (max-width: 480px) {
+          .team-text{
+            font-size: 5px;
+          }
+          .text{
+            font-size: 8px;
+          }
+
+          .single-team{
+          width: 200px;
+          height: 200px;
+          padding: 24px;
+          background: #fff;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          transition: .6s ease-out;
+/*           box-shadow: 0 10px 10px rgba(0,0,0,0.5); */
+          margin-right: 10px;
+          margin-left: 10px;
+          }
+          .team-text a i{
+          color: #fff;
+          
+          }
+          .team-text a{
+          width: 3px;
+          height: 3px;
+          display: inline-block;
+          
+          margin: 0 5px;
+          text-decoration: none;
+        }          
+        }
+
+        
+
+
 
     </style>
 </head>
@@ -191,12 +281,12 @@
     <a name="top"></a>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-sm-9 ">
+            <div class="col-lg-3 col-sm-12 col-md-3 ">
                 <div class="fix nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <a href="#top"><p class="large2 text-center list1"><strong>Initiatives</strong></p></a><br>
-                    <a href="#m1" class="nav-link active color1 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">JVM</a>
-                    <a href="#m2" class="nav-link color2 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">Prayas</a>
-                    <a href="#m3" class="nav-link color3 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">Aarohan</a>
+                  <p class="large2 text-center list1"><strong>Initiatives</strong></p><br>
+                    <a href="#m1" class="nav-link active color1 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">JVM<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </a>
+                    <a href="#m2" class="nav-link color2 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">Prayas<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
+                    <a href="#m3" class="nav-link color3 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">Aarohan<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
                     <br><br><p class="large2 text-center list1"><strong>Members</strong></p><br>
                     <a href="#m4" class="nav-link color4 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">General Body</a>
                     <a href="#m5" class="nav-link color9 large1 text-center" id="v-pills-home-tab" data-toggle="pill" role="tab">Advisory Body</a>
@@ -205,7 +295,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-9 col-md-12">
+            <div class="col-lg-9 col-md-12 text-center">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="m1" role="tabpanel">
 
@@ -215,10 +305,10 @@
 
                             <div class="single-team">
                               <img src="img-1.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person 1</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person 1</p>
                                 <p>Social Strategy Officer</p>
-                                <p>
+                                <p class="text-center">
                                   <a href="#"><i class="fa fa-facebook"></i></a>
                                   <a href="#"><i class="fa fa-twitter"></i></a>
                                   <a href="#"><i class="fa fa-google-plus"></i></a>
@@ -228,10 +318,10 @@
                             </div>
                             <div class="single-team">
                               <img src="img-2.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person 2</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person 2</p>
                                 <p>Chief Officer</p>
-                                <p>
+                                <p class="text-center">
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                   <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
@@ -241,10 +331,10 @@
                             </div>
                             <div class="single-team">
                               <img src="img-3.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person 3</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person 3</p>
                                 <p>Expansion Officer</p>
-                                <p>
+                                <p class="text-center">
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                   <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
@@ -259,9 +349,9 @@
                         <div class="team-area">
 
                           <div class="single-team">
-                            <img src="https://i.pinimg.com/736x/91/2a/b8/912ab8d2985e0331cbdae8071216f267.jpg" alt="">
-                            <div class="team-text">
-                              <h2>Person 1</h2>
+                            <img src="https://www.gardeningknowhow.com/wp-content/uploads/2020/12/lonely-japanese-cherry.jpg" alt="">
+                            <div class="team-text text-center">
+                              <p class="name">Person 1</p>
                               <p>Social Strategy Officer</p>
                               <p>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -273,8 +363,8 @@
                           </div>
                           <div class="single-team">
                             <img src="img4.jpg" alt="">
-                            <div class="team-text">
-                              <h2>Person 2</h2>
+                            <div class="team-text text-center">
+                              <p class="name">Person 2</p>
                               <p>Chief Officer</p>
                               <p>
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -286,8 +376,8 @@
                           </div>
                           <div class="single-team">
                             <img src="https://wallpaperaccess.com/full/170249.jpg" alt="">
-                            <div class="team-text">
-                              <h2>Person 3</h2>
+                            <div class="team-text text-center">
+                              <p class="name">Person 3</p>
                               <p>Expansion Officer</p>
                               <p>
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -311,8 +401,8 @@
                         <div class="team-area">
                             <div class="single-team">
                               <img src="https://resi.ze-robot.com/dl/4k/4k-landscape-wallpaper-3440%C3%971440.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person 1</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person 1</p>
                                 <p>Chief Technical officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -324,8 +414,8 @@
                             </div>
                             <div class="single-team">
                               <img src="img5.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person 2</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person 2</p>
                                 <p>General Secretary</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -337,8 +427,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS35X_rmDAhDArJBOapRnwmPXYtkJ4EyqQSRw&usqp=CAU" alt="">
-                              <div class="team-text">
-                                <h2>Person 3</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person 3</p>
                                 <p>President</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -355,8 +445,8 @@
                          <div class="team-area">
                           <div class="single-team">
                             <img src="img-2.jpg" alt="">
-                            <div class="team-text">
-                              <h2>Person 1</h2>
+                            <div class="team-text text-center">
+                              <p class="name">Person 1</p>
                               <p>Chief Technical officer</p>
                               <p>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -368,8 +458,8 @@
                           </div>
                           <div class="single-team">
                             <img src="img-1.jpg" alt="">
-                            <div class="team-text">
-                              <h2>Person 2</h2>
+                            <div class="team-text text-center">
+                              <p class="name">Person 2</p>
                               <p>General Secretary</p>
                               <p>
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -381,8 +471,8 @@
                           </div>
                           <div class="single-team">
                             <img src="img-3.jpg" alt="">
-                            <div class="team-text">
-                              <h2>Person 3</h2>
+                            <div class="team-text text-center">
+                              <p class="name">Person 3</p>
                               <p>President</p>
                               <p>
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -407,8 +497,8 @@
                         <div class="team-area">
                             <div class="single-team">
                               <img src="https://wallpaperaccess.com/full/2559942.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person D</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person D</p>
                                 <p>Social Strategy Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -420,8 +510,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://www.kanelov.com/wp-content/uploads/2019/06/1Print-1-24.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person E</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person E</p>
                                 <p>Chief Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -433,8 +523,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://cf.ltkcdn.net/photography/images/std/127342-425x282r1-scenery.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person F</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person F</p>
                                 <p>Expansion Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -450,8 +540,8 @@
                             <div class="team-area">
                               <div class="single-team">
                                 <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="">
-                                <div class="team-text">
-                                  <h2>Person D</h2>
+                                <div class="team-text text-center">
+                                  <p class="name">Person D</p>
                                   <p>Social Strategy Officer</p>
                                   <p>
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -463,8 +553,8 @@
                               </div>
                               <div class="single-team">
                                 <img src="https://wallpaperaccess.com/full/16082.jpg" alt="">
-                                <div class="team-text">
-                                  <h2>Person E</h2>
+                                <div class="team-text text-center">
+                                  <p class="name">Person E</p>
                                   <p>Chief Officer</p>
                                   <p>
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -476,8 +566,8 @@
                               </div>
                               <div class="single-team">
                                 <img src="https://i.pinimg.com/originals/5c/3f/d9/5c3fd9952bbd0235c4911da8d9fdac5e.webp" alt="">
-                                <div class="team-text">
-                                  <h2>Person F</h2>
+                                <div class="team-text text-center">
+                                  <p class="name">Person F</p>
                                   <p>Expansion Officer</p>
                                   <p>
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -501,8 +591,8 @@
                         <div class="team-area">
                             <div class="single-team">
                               <img src="https://wallpaperaccess.com/full/170249.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person P</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person P</p>
                                 <p>Social Strategy Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -514,8 +604,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="">
-                              <div class="team-text">
-                                <h2>Person Q</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person Q</p>
                                 <p>Chief Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -527,8 +617,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://i.pinimg.com/originals/b1/94/0e/b1940eb27d12eadbcdaa86dca0f1037d.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person R</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person R</p>
                                 <p>Expansion Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -545,8 +635,8 @@
                           <div class="team-area">
                             <div class="single-team">
                               <img src="https://wallpaperaccess.com/full/2559942.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person P</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person P</p>
                                 <p>Social Strategy Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -558,8 +648,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://www.kanelov.com/wp-content/uploads/2019/06/1Print-1-24.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person Q</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person Q</p>
                                 <p>Chief Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -571,8 +661,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://cf.ltkcdn.net/photography/images/std/127342-425x282r1-scenery.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person R</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person R</p>
                                 <p>Expansion Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -596,8 +686,8 @@
                         <div class="team-area">
                             <div class="single-team">
                               <img src="https://wallpaperaccess.com/full/2559942.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person A</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person A</p>
                                 <p>Social Strategy Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -609,8 +699,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://www.kanelov.com/wp-content/uploads/2019/06/1Print-1-24.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person B</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person B</p>
                                 <p>Chief Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -622,8 +712,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://cf.ltkcdn.net/photography/images/std/127342-425x282r1-scenery.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person C</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person C</p>
                                 <p>Expansion Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -639,8 +729,8 @@
                           <div class="team-area">
                             <div class="single-team">
                               <img src="https://wallpaperaccess.com/full/2559942.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person A</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person A</p>
                                 <p>Social Strategy Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -652,8 +742,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://www.kanelov.com/wp-content/uploads/2019/06/1Print-1-24.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person B</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person B</p>
                                 <p>Chief Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -665,8 +755,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://cf.ltkcdn.net/photography/images/std/127342-425x282r1-scenery.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person C</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person C</p>
                                 <p>Expansion Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -693,8 +783,8 @@
                         <div class="team-area">
                             <div class="single-team">
                               <img src="https://wallpaperaccess.com/full/2559942.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person X</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person X</p>
                                 <p>Chief Financial Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -706,8 +796,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://www.kanelov.com/wp-content/uploads/2019/06/1Print-1-24.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person Y</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person Y</p>
                                 <p>Chief Executive Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -719,8 +809,8 @@
                             </div>
                             <div class="single-team">
                               <img src="https://cf.ltkcdn.net/photography/images/std/127342-425x282r1-scenery.jpg" alt="">
-                              <div class="team-text">
-                                <h2>Person Z</h2>
+                              <div class="team-text text-center">
+                                <p class="name">Person Z</p>
                                 <p>Expansion Officer</p>
                                 <p>
                                   <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -740,8 +830,8 @@
                             <div class="team-area">
                               <div class="single-team">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVHGK2rVI7SA5pXEtOIsR3Kyj9eD8uRoKdQ&usqp=CAU" alt="">
-                                <div class="team-text">
-                                  <h2>Person X</h2>
+                                <div class="team-text text-center">
+                                  <p class="name">Person X</p>
                                   <p>Chief Financial Officer</p>
                                   <p>
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -753,8 +843,8 @@
                               </div>
                               <div class="single-team">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvr7V5Zd0z6TnW7ooW60kRK1bmOHLnxILyAw&usqp=CAU" alt="">
-                                <div class="team-text">
-                                  <h2>Person Y</h2>
+                                <div class="team-text text-center">
+                                  <p class="name">Person Y</p>
                                   <p>Chief Executive Officer</p>
                                   <p>
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -766,8 +856,8 @@
                               </div>
                               <div class="single-team">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq4KICgrifM8P13ltkmHx32Y8L6JRZvFnMlQ&usqp=CAU" alt="">
-                                <div class="team-text">
-                                  <h2>Person Z</h2>
+                                <div class="team-text text-center">
+                                  <p class="name">Person Z</p>
                                   <p>Expansion Officer</p>
                                   <p>
                                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
