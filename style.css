@@ -42,32 +42,42 @@ body
         .color1{
             background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.3), #69a87f),url(https://miro.medium.com/max/875/0*DyiyTwLls2OI6Byh);
             object-fit: cover;
+            color:rgb(70, 70, 70)
         }
         .color2{
             background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.3), #cc9b6d),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDlvDoJmRLnEdaXOhr2P0s-EN-ux4qILu3Q&usqp=CAU);
             object-fit: cover;
+            color:rgb(70, 70, 70)
         }
         .color3{
-            background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.3), #05A1C8),url(https://i2.wp.com/psychlearningcurve.org/wp-content/uploads/2017/05/kindergarten-parents-big.jpg?fit=800%2C544);
+            background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.35), #05A1C8),url(https://i2.wp.com/psychlearningcurve.org/wp-content/uploads/2017/05/kindergarten-parents-big.jpg?fit=800%2C544);
             object-fit: cover;
+            color:rgb(70, 70, 70)
         }
         .color4{
-            background-color: #ebe131;
+            background-color: #4aa96c;
+            color:rgb(70, 70, 70)
         }
         .color5{
             color:#4aa96c;
+            color:rgb(70, 70, 70)
         }
         .color6{
-            background-color:#05A1C8;
+            background-color:#46afc9;
+            color:rgb(70, 70, 70)
         }
         .color7{
             color:#fb9300;
+            
         }
         .color8{
             background-color:#73C38E;
+            color:rgb(70, 70, 70)
+            
         }
         .color9{
-            background-color:#9D8BC5;
+            background-color:#f8a42f;
+            color:rgb(70, 70, 70)
         }
         hr{
             border-style:none;
@@ -151,7 +161,15 @@ body
         }
 
         .heading{
+            color:#ebe131;
             padding-bottom: 8px;
             text-align: center;
         }
-        
+        .inner-text{
+            color:rgb(70, 70, 70)
+        }
+
+        .nav-pills>a.active{
+            
+            background-color: #dfd632 !important;
+           }
