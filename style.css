@@ -4,6 +4,16 @@ body
             margin: 0;
             padding: 0;
         }
+        .row{
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+        .container-fluid{
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
         .fix{
           position: -webkit-sticky;
           position: sticky;
@@ -12,11 +22,15 @@ body
         .top
         {
 
-            height:500px;
-            max-width: 100%;
-            background-image: url(https://miro.medium.com/max/875/0*DyiyTwLls2OI6Byh);
-            background-size: cover;
-        }
+height:500px;
+
+width: 100%;
+
+background-image: url(https://miro.medium.com/max/875/0*DyiyTwLls2OI6Byh);
+
+background-size: cover;
+
+}
 
         .toptext{
             padding-top: 230px;
@@ -25,12 +39,11 @@ body
         }
 
         .list1{
-            margin-left: 20px;
-            width: 340px;
+            /* margin-left: 20px; */
+            /* width: 340px; */
         }
 
         .large1{
-            font-size: 24px;
             font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color:white;
         }
@@ -43,7 +56,7 @@ body
         .color1{
             background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.3), #69a87f),url(https://miro.medium.com/max/875/0*DyiyTwLls2OI6Byh);
             object-fit: cover;
-            color:rgb(70, 70, 70)
+            color:rgb(70, 70, 70);
         }
         .color2{
             background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.3), #cc9b6d),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDlvDoJmRLnEdaXOhr2P0s-EN-ux4qILu3Q&usqp=CAU);
@@ -90,23 +103,31 @@ body
 
         .team-area{
           display: flex;
-          width: 90%;
-          justify-content: space-around;
+          width: 100%;
+          justify-content: center;
         }
 
         .single-team{
 
-          height: 350px;
-          padding: 35px;
-          background: #fff;
-          position: relative;
-          display: flex;
-          align-items: flex-end;
-          transition: .7s ease-out;
-          margin-right: 10px;
-          margin-left: 10px;
-          
-        }
+height: 350px;
+
+padding: 35px;
+
+background: #fff;
+
+position: relative;
+
+display: flex;
+
+align-items: flex-end;
+
+transition: .7s ease-out;
+
+margin-right: 10px;
+
+margin-left: 10px;
+
+}
         .single-team:hover{
           transform: translateY(15px);
         }
