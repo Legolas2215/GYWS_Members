@@ -1,6 +1,5 @@
-body
+        body
         {
-           
             margin: 0;
             padding: 0;
         }
@@ -21,16 +20,11 @@ body
         }
         .top
         {
-
-height:500px;
-
-width: 100%;
-
-background-image: url(https://miro.medium.com/max/875/0*DyiyTwLls2OI6Byh);
-
-background-size: cover;
-
-}
+        height:500px;
+        width: 100%;
+        background-image: url(https://miro.medium.com/max/875/0*DyiyTwLls2OI6Byh);
+        background-size: cover;
+        }
 
         .toptext{
             padding-top: 230px;
@@ -108,28 +102,22 @@ background-size: cover;
         }
 
         .single-team{
+        height: 350px;
+        padding: 35px;
+        background: #fff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-end;
+        transition: .7s ease-out;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
 
-height: 350px;
-
-padding: 35px;
-
-background: #fff;
-
-position: relative;
-
-display: flex;
-
-align-items: flex-end;
-
-transition: .7s ease-out;
-
-margin-right: 10px;
-
-margin-left: 10px;
-
-}
+        }
         .single-team:hover{
-          transform: translateY(15px);
+          transform: translateY(8px);
         }
         .single-team:hover:before{
           opacity: 1;
@@ -164,7 +152,7 @@ margin-left: 10px;
           z-index: 3;
           color: #fff;
           opacity: 0;
-          transform: translateY(60px);
+          transform: translateY(32px);
           transition: 0.5s;
         }
         .team-text h2{
@@ -198,4 +186,5 @@ margin-left: 10px;
 
         img{
           max-width: 100%;
+          width: inherit;
         }
