@@ -73,8 +73,9 @@ background-size: cover;
     color:rgb(70, 70, 70)
 }
 .color6{
-    background-color:#46afc9;
-    color:rgb(70, 70, 70)
+  background-image: linear-gradient(to top, rgba(245, 246, 252, 0.5), #05A1C8),url(https://i2.wp.com/psychlearningcurve.org/wp-content/uploads/2017/05/kindergarten-parents-big.jpg?fit=800%2C544);
+  object-fit: cover;
+  color:rgb(70, 70, 70)
 }
 .color7{
     color:#d8ce12;
